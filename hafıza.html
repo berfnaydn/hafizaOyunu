@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+	<head>
+		<title>jQuery</title>
+		<link rel="stylesheet"  href="./css/hafıza.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		
+    </head>
+		<body>
+		<div class="container">
+	<header class="header">
+		<h1>Hafıza Oyunu</h1>
+	</header>
+
+	<section class="score-panel">
+		<h3>Score</h3>
+		<ul id="star-rating" class="star-rating">
+			<li class="star"><i class="fa fa-star"></i></li>
+			<li class="star"><i class="fa fa-star"></i></li>
+			<li class="star"><i class="fa fa-star"></i></li>
+		</ul>
+		<span class="moves-counter">0</span> Hamle
+		<div class="timer-container">
+			<span class="timer"><i class="fa fa-hourglass-start"></i> Süre: 00:00</span>
+		</div>
+		<div class="reset">
+			<button class="btn reset-btn">Yeniden Başla <i class="fa fa-repeat"></i></button>
+		</div>
+	</section>
+
+	<section class="win-game-modal">
+		<div id="modal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<h2>Tebrikler!</h2>
+				<p>Oyunu kazandınız!</p>
+				<img class="modal-img"  >
+				<button class="btn play-again-btn">Tekrar oyna</button>
+			</div>
+		</div>
+	</section>
+
+	<ul class="deck"></ul>
+</div>
+<script type="text/javascript" language="JavaScript" src="./js/hafıza.js"></script>
+    </body>
+</html>
